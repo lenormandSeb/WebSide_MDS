@@ -9,11 +9,14 @@ require_once('common.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="includes/style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <title>The Artisans of Christmas</title>
 </head>
 
 <body>
     <header>
+        <button class="chooselanguage" data-lang="en">EN</button>
+        <button class="chooselanguage" data-lang="fr">FR</button>
         <div class="container-fluid colorGrey">
             <div class="row">
                 <div class="col-sm offset-sm-11">
@@ -34,18 +37,15 @@ require_once('common.php');
             <div class="row colorRed">
                 <div class="col-sm-10 offset-sm-1">
                     <ul class="nav nav-fill colorRed tWhite">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="product.html">Products</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="artisans.html">List of artisants</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="contact.html">Contacts</a>
-                        </li>
+                        <?php
+                            foreach($page[(isset($_GET['lang']) ? $_GET['lang'] : 'EN' )] as $p){
+                                ?>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo $p['path'] .'?lang='. (isset($_GET['lang']) ? $_GET['lang'] : 'EN' );?>"><?php echo $p['title']; ?></a>
+                                </li>
+                                <?php
+                            }
+                        ?>
                     </ul>
                 </div>
             </div>

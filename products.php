@@ -5,22 +5,19 @@ require_once('includes/fakeData/products.php');
 require_once('includes/fakeData/sidebar.php');
 
 ?>
-<div>
-    Texte
+<div class="product_text">
+    From decoration to stationery, including table artsn discover the products offered be The Artisans of Christmas.
 </div>
 <div class="row">
-    <div class="col-md-3" style="background-color: #e0e0eb;text-align:center">
+    <div class="col-md-3 product_left" style="background-color: #e0e0eb">
         <?php
         foreach($sidebar as $side => $sideValue){
-            echo '<p><strong>'. strtoupper($side).'</strong></p>';
+            echo '<p class="product_left_text_strong"><strong>'. strtoupper($side).'</strong></p>';
             for($i = 0; $i < count($sideValue); $i++) {
                 if ($side == "Color") {
-                    if ($i % 4 == 0){
-                        echo '<br>';
-                    }
                     echo '<span class="dot" style="background-color: '.$sideValue[$i].'"></span>';
                 } else {
-                    echo '<p>'. $sideValue[$i] .'</p>';
+                    echo '<p class="product_left_text">'. $sideValue[$i] .'</p>';
                 }
             }
         }
@@ -32,9 +29,11 @@ require_once('includes/fakeData/sidebar.php');
         foreach($products as $product) {
             ?>
             <div class="col-md-4">
-                <img height="100px" width="100px" src="<?php echo ASSET_IMG.'Products/'.$product['img']; ?>">
-                <p class="title"><?php echo $product['name'];?></p>
-                <p class="price"><?php echo $product['price'];?> €</p>
+                <img height="350px" width="100%" src="<?php echo ASSET_IMG.'Products/'.$product['img']; ?>">
+                <div style="text-align: center;">
+                    <p class="product_left_title"><strong><?php echo $product['name'];?></strong></p>
+                    <p class="price"><strong><?php echo $product['price'];?> €</strong></p>
+                </div>
             </div>
             <?php
         }

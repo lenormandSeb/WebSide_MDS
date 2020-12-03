@@ -27,5 +27,6 @@
             </div>
         </div>
     </Footer>
+    <script src="./includes/javascript/ready.js"></script>
 </body>
 </html>
