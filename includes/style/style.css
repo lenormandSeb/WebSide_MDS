@@ -1,0 +1,303 @@
+.p0 {
+    padding: 0 !important;
+}
+
+.mb0 {
+    margin-bottom: 0 !important;
+}
+
+.customImg {
+    position: absolute;
+    top: 50px;
+    left: 36%;
+    height: 20%;
+}
+
+li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.dot {
+    height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 2px;
+}
+
+.product_text {
+    height: 125px;
+    text-align: center;
+    font-style: italic;
+    padding-top: 50px;
+}
+
+.product_left {
+    max-width: 240px !important;
+    margin-left: 160px;
+    height: min-content;
+}
+
+.product_left_text {
+    font-size: small;
+    margin: 0;
+}
+
+.product_left_text_strong {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.product_left_title {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.container-custom {
+    height: 600px;
+    margin: 80px 10% 0 10%;
+}
+
+.customize {
+    width: 65%; 
+    float:right; 
+    height:40%;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.img_custom {
+    float: left;
+    width: 32%;
+    height: 40%;
+}
+
+.customize2 {
+    width: 65%; 
+    float: left; 
+    height:40%;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.img_custom2 {
+    float: right;
+    width: 32%;
+    height: 40%;
+}
+
+.address {
+    float: left;
+    font-weight: bolder;
+}
+
+.tel {
+    float: right;
+    font-weight: bolder;
+}
+
+.name_artisant {
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+.description_artisant {
+    word-wrap: break-word;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.blue-border::before
+{
+    display: block;
+    content: '';
+    height: 84%;
+    width: 5px;
+    background-color: gray;
+    float: right;
+    margin-left: 10px;
+}
+
+.custom-form {
+    background-image: url(../images/christmas-background.jpg);
+    background-position: 0%;
+    margin-bottom: 50px;
+    height: 600px;
+    padding-top: 2%;
+    padding-left: 8%;
+    padding-right: 12%;
+    border-radius: 33px;
+    width: 50%;
+    text-align: center;
+}
+
+.colorRed {
+    background-color: #BC1823;
+}
+
+.nav_red {
+    height: 60px;
+    font-size: larger;
+}
+
+.tWhite{
+    color: white;
+}
+
+.center {
+    text-align: center;
+    font-size: 23;
+}
+
+.colorGrey {
+    background-color: #F0F0F0;
+}
+
+li:hover {
+    background-color: darkred;
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    background-color: transparent;
+}
+
+.nav-item {
+    padding-top: 6px;
+}
+
+#ft {
+    height: 260;
+}
+
+.imgCar {
+    width: 275;
+    height: 275;
+}
+
+li {
+    text-align: center;
+    align-items: center;
+}
+
+.img {
+    width: 275;
+    height: 275;
+}
+
+.logo {
+    width: 50;
+    height: 50;
+}
+
+.article {
+    text-align: center;
+    width: 200;
+    height: 200;
+}
+
+#carouselExampleSlidesOnly {
+    width: 80%;
+    height: 80%;
+}
+
+.contact_us {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    padding-left: 100px;
+
+}
+
+.form_custom {
+    height: 60px;
+    width: 350px;
+    margin-left: 27%;
+}
+
+.textaera_custom {
+    height: 100px !important;
+    width: 350px;
+    margin-left: 27%;
+}
+
+.btn_custom {
+    height: 60px;
+    width: 350px;
+    margin-left: 18%;
+    background-color: #BC1823;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.colorRed {
+    background-color: #BC1823;
+}
+.tWhite{
+    color: white;
+}
+
+.center {
+    text-align: center;
+    font-size: 23;
+}
+
+.colorGrey {
+    background-color: #F0F0F0;
+}
+
+li:hover {
+    background-color: darkred;
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    background-color: transparent;
+}
+
+
+
+#ft {
+    height: 260;
+}
+
+.imgCar {
+    width: 275;
+    height: 275;
+}
+
+li {
+    text-align: center;
+    align-items: center;
+}
+
+.img {
+    width: 275;
+    height: 275;
+}
+
+.logo {
+    width: 50;
+    height: 50;
+}
+
+.article {
+    text-align: center;
+    width: 200;
+    height: 200;
+}
+
+.line{
+    width: 100%;
+    height: 1%;
+    border-bottom: 3px solid #BC1823;
+}
+
+#carouselExampleSlidesOnly {
+    width: 80%;
+    height: 80%;
+}

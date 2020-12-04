@@ -3,5 +3,6 @@ RewriteEngine On
 RewriteRule index.html index.php
 RewriteRule product.html products.php
 RewriteRule artisans.html artisans.php
+RewriteRule contact.html contact.php
 
 ErrorDocument 404 /error/404.php
